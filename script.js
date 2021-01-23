@@ -7,7 +7,7 @@ request.onload=function(){
         try{
             var lang=data[i].latlng;
         var name=data[i].name;
-        wd(name,...lang)
+        tem(name,...lang)
         }
         catch (e) {
             console.log('Invalid co-ordinate data for country: ' + name + ' ' + e.message);
@@ -16,7 +16,7 @@ request.onload=function(){
     }
 }
 
-var wd = function (name, lat, lang) {
+var tem = function (name, lat, lang) {
 	var request = new XMLHttpRequest();
 	var url =
 		'https://api.openweathermap.org/data/2.5/weather?lat=' +
